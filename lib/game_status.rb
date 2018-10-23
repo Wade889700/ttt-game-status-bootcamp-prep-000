@@ -48,9 +48,11 @@ end
 def winner(board)
   winner = nil
   WIN_COMBINATIONS.each do |combo|
-    if combo.all? {|idx| board[idx] == "X"}
+    if combo.all? do |idx| 
+      board[idx] == "X"
       winner = "X"
-    elsif combo.all? {|idx| board[idx] == "O"}
+    elsif combo.all? do |idx| 
+      board[idx] == "O"
       winner = "O"
     else
     end
