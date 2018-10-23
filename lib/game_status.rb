@@ -47,7 +47,7 @@ end
 
 def winner(board)
   if won?(board)==true 
-    if win_combination[0]=='O'
+    if position[0]=='O'
     return "O"
     else 
     return "X"
