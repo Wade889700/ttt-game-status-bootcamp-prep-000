@@ -55,5 +55,4 @@ def winner(board)
     else
     end
   end
-  winner
 end
