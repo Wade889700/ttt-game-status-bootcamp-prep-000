@@ -50,8 +50,10 @@ def winner(board)
   WIN_COMBINATIONS.each do |combo|
     if combo.all? {|idx| board[idx] == "X"}
       winner = "X"
+      return winner
     elsif combo.all? {|idx| board[idx] == "O"}
       winner = "O"
+      return winner
     else
     end
   end
