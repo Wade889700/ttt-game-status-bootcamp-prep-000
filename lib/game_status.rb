@@ -48,5 +48,9 @@ end
 def winner(board)
   if won?(board)==true && win_combination[0]=='O'
     return "O"
+  elsif if won?(board)==true && win_combination[0]=='X'
+    return "X"
+  else
+    return "no winner"
   end
 end
