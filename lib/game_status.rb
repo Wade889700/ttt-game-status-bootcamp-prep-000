@@ -39,11 +39,15 @@ def draw?(board)
   end
 end
 
-def over?(board)
-  if won?(board)==true || draw?(board)==true || full?(board)==true|| full?(board)==false
+def over?(array3)
+  if full?(array3) || !(won?(array3)) || draw?(array3)
+    puts "GAME OVER"
     return true
-  end
-end
+  else 
+    puts "it ain't over till it's over baby!"
+    return false 
+  end 
+end  
 
 def winner(board)
   winner = nil
