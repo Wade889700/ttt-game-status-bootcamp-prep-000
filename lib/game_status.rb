@@ -47,6 +47,6 @@ end
 
 def winner(board)
   until won?(board)==true
-  return "#{position} has won the game"
+  return  
 end
 end
